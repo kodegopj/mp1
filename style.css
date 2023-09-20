@@ -87,7 +87,7 @@
 
 
 .backgound{
-    background-color: rgb(29, 29, 91);
+    background: linear-gradient(to top, rgb(29,29,91), rgb(71, 0, 0) );
     height: 380px;
     padding-bottom: 40px;
 }
@@ -280,20 +280,25 @@
 }
 
 .howworks{
-    background-image: url('img5.jpg');
-    background-size: contain ;
+    background-image: url('cops.jpg');
+    background-size: cover;
     padding-top: 100px;
+    opacity: 1;
     display: flex;
     text-align: center;
     top: 20px;
     border: 0;
-    height: 400px;
+    height: 360px;
     border-bottom: 10px solid rgb(29, 29, 91);
 }
 
 .how{
-    border-bottom: 4px solid darkgray;
+    /* border-bottom: 4px solid darkgray; */
     padding-top: 100px;
+}
+
+.love{background-size: cover;
+
 }
 
 .imagine{
@@ -310,7 +315,7 @@
     justify-content: center;
     padding-top: 100px;
     color: rgb(25, 23, 23);
-    background-color: gray;
+    background: linear-gradient(to top, white, gray);
     height: 250px;
     border-top: 15px solid gray;
 }
@@ -319,11 +324,26 @@
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
-    background-color: #bdbbbb;
+    background: linear-gradient(to top, gray, white);
     padding: 10px 80px ;
     border-radius: 25px;
     border-top: 2px solid rgb(29, 29, 91);
     border-bottom: 2px solid rgb(29, 29, 91);
+}
+
+
+@media(min-width:315px) and (max-width:500px){
+    .fead{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+        background: linear-gradient(to top, gray, white);
+        padding: 10px 20px ;
+        border-radius: 25px;
+        border-top: 2px solid rgb(29, 29, 91);
+        border-bottom: 2px solid rgb(29, 29, 91);
+    }
+    
 }
 
 .gridbox{
@@ -336,8 +356,8 @@
 }
 
 .box{
-    background-color: rgb(197, 195, 195);
-    height: 500px;
+    background-color: rgb(208, 208, 208);
+    height: 600px;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
     border-radius: 25px;
@@ -368,6 +388,7 @@
 .conte{
     padding-left: 10px;
     padding-right: 10px;
+    margin: 10px;
 }
 
 .pogi{
@@ -385,35 +406,35 @@
 
 .tec{
     background-color: gray;
-    background-image: url('cops.jpg');
+    background-image: url('wood.jpg');
     background-size: cover;
     align-items: center;
     display: flex;
     justify-content: center;
-    border-top: 15px solid rgb(29, 29, 91);
-    border-radius:25px 25px 0px 0px ;
+    /* border-top: 15px solid rgb(29, 29, 91); */
+    /* border-radius:25px 25px 0px 0px ; */
     /* background-color: rgb(29, 29, 91); */
     color: white;
     padding: 50px 0;
-    height: 300px;
+    height: 400px;
     /* margin: 20px; */
     /* margin-left: 100px;
     margin-right: 100px; */
 }
 
 .ten{
-    background-color: #d4d2d2;
+    /* background-color: #d4d2d2; */
     padding: 20px 50px;
-    color: black;
+    color: white;
     border-radius: 25px;
-    border-top: 5px solid rgb(29, 29, 91);
-    border-bottom: 5px solid rgb(29, 29, 91);
+    /* border-top: 5px solid rgb(29, 29, 91);
+    border-bottom: 5px solid rgb(29, 29, 91); */
     margin: 20px;
 }
 
 .contains{
-    background-image: url('library.jpg');
-    background-size: cover;
+    /* background-image: url('ad.jpg'); */
+    /* background-size: cover; */
     background-color: white;
     display: flex;    
     justify-content: space-evenly;
@@ -421,11 +442,12 @@
     /* border-top: 100px solid gray; */
     /* border-bottom: 400px solid gray; */
     height: ;
-    padding: 0px 0px 150px 0px;
+    padding: 50px 0px 150px 0px;
+    background: linear-gradient(to top, white, gray);
 }
 
 .card{
-    background-color: whitesmoke;
+    background-color: rgb(210, 209, 209);
     width: 605px;
     height: 905px;
     margin: 20px;
@@ -545,7 +567,7 @@ footer{
 
 }
 
-.row{
+.rows{
     width: 85%;
     margin: auto;
     display: flex;
@@ -554,13 +576,19 @@ footer{
     justify-content: space-between;
 }
 
-.col{
+.cols{
     flex-basis: 25%;
     padding: 10px;
 }
 
-.col h3{
+.cols:nth-child(2), .cols:nth-child(3){
+    flex-basis: 20%;
+}
+
+
+.cols h3{
     width: fit-content;
+    font-size: 15px;
 }
 
 .email-id{
@@ -572,4 +600,90 @@ footer{
 ul li{
     list-style: none;
     margin-bottom: 12px;
+}
+
+form{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+form .fa-solid{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+form button .fa-sharp{
+    font-size: 16px;
+    color: #ccc;
+}
+
+.social-icons .fa-brands{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.copyrights{
+    text-align: center;
+}
+
+/* .underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+
+} */
+.tubig{
+    border-bottom: 5px solid gray;
+    padding-bottom: 5px;
+    border-radius: 3px;
+    
+}
+
+@media (max-width: 700px){
+    .cols{
+        flex-basis: 100%;
+        padding: 10px;
+    }
+    
+    .cols:nth-child(2), .cols:nth-child(3){
+        flex-basis: 100%;
+    }
 }
