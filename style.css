@@ -80,7 +80,7 @@
     background-color: rgb(29, 29, 91);
     color: white;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 10px 20px 10px 20px;
     text-decoration: none;
 
 }
@@ -177,7 +177,7 @@
     }
 
     .con2{
-        padding: 5px;
+        padding: 4px 5px;
         margin: 5px;
         font-size: small;
     }
@@ -204,7 +204,7 @@
     }
 
     .con2{
-        padding: 5px;
+        padding: 5px 8px;
         margin: 5px;
         font-size: small;
     }
@@ -227,7 +227,7 @@
     }
 
     .con2{
-        padding: 5px 0px 0px 0px;
+        padding: 5px 10px;
         font-size: small;
     }
 
@@ -248,7 +248,7 @@
     }
 
     .con2{
-        padding: 5px 0px 0px 0px;
+        padding:2px 7px 2px 7px ;
         
     }
 
@@ -322,26 +322,26 @@
 
 .fead{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap;
     margin: 20px;
     background: linear-gradient(to top, gray, white);
     padding: 10px 80px ;
     border-radius: 25px;
     border-top: 2px solid rgb(29, 29, 91);
-    border-bottom: 2px solid rgb(29, 29, 91);
+    border-bottom: 2px solid rgb(29, 29, 91); */
 }
 
 
 @media(min-width:315px) and (max-width:500px){
     .fead{
         display: flex;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap;
         margin: 20px;
         background: linear-gradient(to top, gray, white);
         padding: 10px 20px ;
         border-radius: 25px;
         border-top: 2px solid rgb(29, 29, 91);
-        border-bottom: 2px solid rgb(29, 29, 91);
+        border-bottom: 2px solid rgb(29, 29, 91); */
     }
     
 }
@@ -527,7 +527,7 @@
 }
 
 .logos2{
-    background-image: url('arch.jpg');
+    background-image: url('/images/arch.jpg');
     padding: 10px 20px 50px 10px;
 
 }
