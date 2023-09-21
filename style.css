@@ -218,7 +218,7 @@
 
 @media (min-width:330px) and (max-width:425px){
     .container2{
-        height: 330px;
+        height: 350px;
         padding: 20px 20px 0px 20px;
     }
     
@@ -399,7 +399,6 @@
     position: relative;
     bottom: 15px;
     border-radius: 25px;
-    padding: ;
     color: white;
     background-color: gray;
 }
@@ -441,7 +440,6 @@
     flex-wrap: wrap;
     /* border-top: 100px solid gray; */
     /* border-bottom: 400px solid gray; */
-    height: ;
     padding: 50px 0px 150px 0px;
     background: linear-gradient(to top, white, gray);
 }
