@@ -163,7 +163,7 @@
 
 @media (min-width:280px) and (max-width:300px){
     .container2{
-        height: 270px;
+        height: 300px;
         padding: 20px 20px 0px 20px;
     }
     
@@ -190,7 +190,7 @@
 
 @media (min-width:301px) and (max-width:330px){
     .container2{
-        height: 280px;
+        height: 300px;
         padding: 20px 20px 0px 20px;
     }
     
