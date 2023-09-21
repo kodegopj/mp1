@@ -161,7 +161,7 @@
     font-weight: 600;
 }
 
-@media (min-width:280px) and (max-width:300px){
+@media (min-width:279px) and (max-width:301px){
     .container2{
         height: 300px;
         padding: 20px 20px 0px 20px;
@@ -525,7 +525,7 @@
 }
 
 .logos2{
-    background-image: url('/images/arch.jpg');
+    background-image: url('arch.jpg');
     padding: 10px 20px 50px 10px;
 
 }
